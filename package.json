@@ -1,0 +1,21 @@
+{
+  "name": "asnor-ali-portfolio",
+  "version": "1.0.0",
+  "description": "A mobile-first portfolio and website-development landing page for Asnor Ali",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'No build step required for static site'",
+    "lint": "echo 'No linting configured'"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "landing-page"
+  ],
+  "author": "Asnor Ali",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.12"
+  }
+}
