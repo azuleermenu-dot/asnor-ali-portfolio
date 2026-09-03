@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>Admin — Asnor Ali</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <main class="shell">
+    <section id="login-view" class="card auth-card">
+      <div class="eyebrow">PRIVATE AREA</div>
+      <h1>Admin sign in</h1>
+      <p>Sign in to manage website contact submissions.</p>
+      <form id="login-form" novalidate>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="username" required maxlength="320">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required minlength="8">
+        <button type="submit" id="login-button">Sign in</button>
+        <p id="login-status" class="status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="dashboard-view" class="hidden">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow">PRIVATE ADMIN</div>
+          <h1>Contact submissions</h1>
+          <p id="admin-email" class="muted"></p>
+        </div>
+        <div class="actions">
+          <button id="refresh-button" class="secondary" type="button">Refresh</button>
+          <button id="logout-button" class="secondary" type="button">Sign out</button>
+        </div>
+      </header>
+
+      <div id="dashboard-status" class="status" role="status" aria-live="polite"></div>
+      <div id="submissions" class="submissions"></div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
